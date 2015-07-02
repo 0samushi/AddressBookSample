@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import AddressBook
+import AddressBookUI
 
-class ViewController: UIViewController {
+/**
+* 空っぽのViewController
+* 連絡帳へのアクセスロジックはAppDelegate内に記述
+*/
+class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
+
 

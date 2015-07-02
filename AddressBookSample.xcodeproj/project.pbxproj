@@ -13,6 +13,8 @@
 		0B3609231B4510A100E6C772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3609221B4510A100E6C772 /* Images.xcassets */; };
 		0B3609261B4510A100E6C772 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3609241B4510A100E6C772 /* LaunchScreen.xib */; };
 		0B3609321B4510A100E6C772 /* AddressBookSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3609311B4510A100E6C772 /* AddressBookSampleTests.swift */; };
+		0B36093C1B4510E100E6C772 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B36093B1B4510E100E6C772 /* AddressBook.framework */; };
+		0B36093E1B4510E800E6C772 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B36093D1B4510E800E6C772 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		0B36092B1B4510A100E6C772 /* AddressBookSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3609301B4510A100E6C772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B3609311B4510A100E6C772 /* AddressBookSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookSampleTests.swift; sourceTree = "<group>"; };
+		0B36093B1B4510E100E6C772 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0B36093D1B4510E800E6C772 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B36093E1B4510E800E6C772 /* AddressBookUI.framework in Frameworks */,
+				0B36093C1B4510E100E6C772 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		0B36090D1B4510A100E6C772 = {
 			isa = PBXGroup;
 			children = (
+				0B36093D1B4510E800E6C772 /* AddressBookUI.framework */,
+				0B36093B1B4510E100E6C772 /* AddressBook.framework */,
 				0B3609181B4510A100E6C772 /* AddressBookSample */,
 				0B36092E1B4510A100E6C772 /* AddressBookSampleTests */,
 				0B3609171B4510A100E6C772 /* Products */,
@@ -342,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AddressBookSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AddressBookSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
